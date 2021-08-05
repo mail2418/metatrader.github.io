@@ -1,0 +1,75 @@
+/* body */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* main */
+main{
+  background-image: url("https://images.unsplash.com/photo-1615992174118-9b8e9be025e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+/* header */
+header {
+  display: inline;
+}
+/* navigation */
+.MetaTrader-Title{
+  font-weight: bold;
+}
+nav {
+  background-color: #2F4F9E;
+  padding: 5px;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  font-weight: bold;
+  color: white;
+}
+nav li {
+  margin-right: 20px;
+}
+nav h1{
+  margin-top: 10px;
+  color: #ABC3FF;
+}
+/* footer */
+footer {
+  padding: 15px;
+  color: white;
+  background-color: #0E165C;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* login-box */
+.container-login{
+  width: 473px;
+  height: 931px;
+  background-color: #8D93C8;
+  opacity: 75%;
+  align-content: center;
+  position: relative;
+}
+.login-box{
+  position: absolute;
+  left: 115px;
+  top: 230px;
+}
+/* responsive */
+
+/* Quotes Login */
+.Quotes-Login{
+  color:#6375A5;
+  text-align: right;
+  padding: 10px;
+  font-size: 80px;
+}
