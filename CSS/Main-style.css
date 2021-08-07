@@ -1,0 +1,113 @@
+/* body */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* main */
+main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+/* header */
+header {
+  display: inline;
+}
+
+/* navigation */
+.MetaTrader-Title {
+  font-weight: bold;
+}
+
+nav {
+  background-color: #2F4F9E;
+  padding: 5px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: white;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav h1 {
+  margin-top: 10px;
+  color: #ABC3FF;
+}
+
+/* footer */
+footer {
+  padding: 15px;
+  width: 100%;
+  color: white;
+  background-color: #0E165C;
+  text-align: right;
+  font-weight: bold;
+
+}
+
+/* login-box */
+.container-login {
+  width: 473px;
+  height: 931px;
+  background-color: #8D93C8;
+  opacity: 75%;
+  align-content: center;
+  position: relative;
+}
+
+.login-box {
+  position: absolute;
+  left: 115px;
+  top: 230px;
+}
+
+/* responsive */
+/* Quotes Login */
+.Quotes-Login {
+  color: #6375A5;
+  text-align: right;
+  padding: 10px;
+  font-size: 80px;
+}
+
+/* sidebar-menu */
+.sidebar-nav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  /* z-index: 1; */
+  left: 0;
+  background-color: #EEF7FF;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar-nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar-nav a:hover {
+  color: #f1f1f1;
+}
+@media screen and (max-height: 450px) {
+  .sidebar-nav {padding-top: 15px;}
+  .sidebar-nav a {font-size: 18px;}
+}
