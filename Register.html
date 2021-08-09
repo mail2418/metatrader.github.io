@@ -23,11 +23,11 @@
         <div class="container-page">
           <div class="col-md-6">
             <h3 class="dark-grey">Registration</h3>
-            <form action="https://metatraderpkm.herokuapp.com/user/register.php" method="post">
+            <form id='form'>
               Name: <input type="text" name="name"><br>
               E-mail: <input type="text" name="email"><br>
               Password: <input type="password" name="password"><br>
-              <a href="Main.html"><button type="submit" name="submit">Submit</button></a>
+              <button id='submit'>Submit</button>
             </form>
           </div>
 
@@ -53,6 +53,21 @@
       </section>
     </div>
   </main>
+
+  <script>
+    document.getElementById("submit").addEventListener("click", function (event) {
+      event.preventDefault();
+      fetch("https://metatraderpkm.herokuapp.com/user/register.php", {
+        body: new FormData(document.getElementById("form")),
+        method: "post"
+      }).then(data => {
+        data.json();
+
+      }).then(response =>{
+        location.href = 'Main.html';
+      })
+    });
+  </script>
 
 </body>
 
