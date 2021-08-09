@@ -47,7 +47,7 @@
         <!-- login box -->
         <div class="login-box">
           <div class="d-flex justify-content-center form_container ">
-            <form action = "https://metatraderpkm.herokuapp.com/user/login.php" method="post">
+            <form id='form'>
               <div class="input-group mb-3">
                 <div class="input-group-append">
                   <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -67,7 +67,8 @@
                 </div>
               </div>
               <div class="d-flex justify-content-center mt-3 login_container">
-                <button type="submit" name="button" class="btn login_btn">Login</button>
+                <button id='login' class="btn login_btn">Login</button>
+                <!-- <button id='submit'>Submit</button> -->
               </div>
             </form>
           </div>
@@ -92,6 +93,19 @@
   <footer>
     <p>&#169; 2021 PKM_KC ITS</p>
   </footer>
+  <script>
+    document.getElementById("login").addEventListener("click", function (event) {
+      event.preventDefault();
+      fetch("https://metatraderpkm.herokuapp.com/user/login.php", {
+        body: new FormData(document.getElementById("form")),
+        method: "post"
+      }).then(data => {
+        data.json();
+      }).then(response =>{
+        location.href = 'https://metatraderpkm.herokuapp.com/user/login.php';
+      })
+    });
+  </script>
 </body>
 
 </html>
