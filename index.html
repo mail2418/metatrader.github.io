@@ -93,11 +93,14 @@
       fetch("https://metatraderpkm.herokuapp.com/user/login.php", {
         body: new FormData(document.getElementById("form")),
         method: "post"
-      }).then(data => {
-        data.json();
-        console.log(data.json());
-      }).then(response =>{
-
+      }).then((response) => response.json())
+      .then((user)=>{
+        if(user.isSuccess){
+          location.href = "Main.html";
+        }
+        else{
+          alert("User tidak ditemukan");
+        }
       })
     });
   </script>
